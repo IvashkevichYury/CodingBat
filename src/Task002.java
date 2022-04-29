@@ -4,15 +4,12 @@ Given 3 int values, return true if 1 or more of them are teen.*/
 public class Task002 {
     public static void main(String[] args) {
         System.out.println(hasTeen(10, 13, 20));
-        System.out.println(hasTeen(10, 30, 19));
-        System.out.println(hasTeen(10, 30, 9));
-
+        System.out.println(hasTeen(10, 19, 20));
+        System.out.println(hasTeen(10, 30, 20));
     }
 
     public static boolean hasTeen(int a, int b, int c) {
-
         return isTrue(a) || isTrue(b) || isTrue(c);
-
     }
 
     private static boolean isTrue(int a) {
@@ -21,4 +18,5 @@ public class Task002 {
         } else
             return false;
     }
+
 }
